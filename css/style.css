@@ -1,0 +1,232 @@
+/*
+    Autheor: Red;
+    Theam : Resturents;
+    verson: 1.0;
+*/
+
+/* CSS for All*/
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    
+
+}
+
+
+.Image-border-adjustment{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right-move{
+    text-align: right;
+}
+
+.text-center-move{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+
+.clear-fix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: black;
+    text-decoration: none; /* its for entire page ancor decoration*/
+}
+a:hover{
+    color: green; /* sudo class and its used here for cursor hover effects */
+}
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 7px; /*changing the box sape of the button */
+}
+.btn-primary{ /* here its a sub class of btn and changes its colour and size */
+    background-color: goldenrod;
+    color: black;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: black;
+    color: green;
+}
+
+h2{
+    color:goldenrod; 
+    font-size: 1.5rem; /* all the h2 are being chamge becasue of this */
+    margin: 2%;
+}
+h3{
+    font-size: 2.1rem;
+}
+
+.float-container{
+    position: relative;
+    /* it wil move the picture 50% left (left: 50%;) */
+}
+
+.float-text{
+    position: absolute;
+    bottom: 100px;
+    left: 40%;
+}
+
+ /* css for nave bar section */
+ .logo{
+     
+     width: 10%;
+     float: left; /*moving the logo left but its keeps on floating (need to)*/
+ }
+
+ .menu{
+     line-height: 60px;
+ }
+
+ .menu ul{
+     list-style-type: none; /*Reving the listing dots in Nave bar*/
+ }
+.menu li{
+    display: inline;
+    padding: 1%;
+}
+/* its for individual paet ancor decration not the entire page 
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+}
+*/
+
+/* CSS for Food Search section*/
+
+.food-search{
+    background-image: url(../Images\ &\ Logos/search-bar.png); /* .. used for redirectiong the containing folder */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4% 0%;
+    
+}
+
+.food-search input[type=search]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 7px; /*changing the box sape of the bar */
+}
+
+/* CSS for catagories */
+.catagory{
+    padding: 3% 0;
+}
+.box-3{
+    
+    width: 27%;
+    float: left;
+    margin: 3%;
+}
+
+/*css for patterns */
+
+.patterns{
+    background-color: azure;
+    padding: 4% 0%;
+}
+
+.p-menu{
+    
+    border-radius: 15px;
+    width: 45%;
+    margin: 1%;
+    padding: 1%;
+    float: left;
+    background-color:lightgreen;
+}
+.p-menu-img{
+    width: 20%; /* to restrick the full image comsuntion */
+    float: left;
+}
+.p-menu-desc{
+    width: 60%;
+    float: left;
+    margin: 1% 8%;
+}
+.p-price{
+    font-size: 2.1rem; /* rem comes form the rem language class we set earlier */
+    margin: 2% 0%;
+}
+.p-dec{
+    font-size: 1rem;
+    color: lightgray;
+}
+
+/*css for social */
+
+.social ul{
+    list-style-type: none;
+
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+
+/* making suitable for mobiles */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+    }
+    .menu ul{
+        text-align: center;
+    }
+    .food-search input[type=search]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    .btn{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+
+    .catagory{
+        padding: 10% 0;
+    }
+
+    h2{
+        margin-bottom: 10% auto;
+    }
+
+    .box-3{
+        width: 90%;
+        margin: 2% auto;
+
+    }
+    .patterns{
+        padding: 20% auto;
+    }
+    .p-menu{
+        width: 90%;
+        padding: 5% auto;
+    }
+    
+}
